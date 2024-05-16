@@ -76,7 +76,7 @@ function EGYM() {
           Ventas y Estadísticas.
         </p>
 
-        <p className="px-2 py-1 my-1 text-xs md:text-md bg-primary text-base-100 md:text-sm">React, Tailwind, JavaScript, JWT, MongoDB
+        <p className="px-2 py-1 my-1 text-xs md:text-md bg-primary text-base-100 md:text-sm">React, Tailwind, JavaScript, Google Auth, Cloudinary, JWT, MongoDB
         </p>
         <div className="flex justify-end w-full gap-2 ">
           <Link
