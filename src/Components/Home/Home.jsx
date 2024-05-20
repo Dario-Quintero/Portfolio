@@ -5,11 +5,11 @@ import Footer from "../Footer/Footer";
 
 function Home() {
   return (
-    <div className="flex flex-col justify-between w-full min-h-screen items-between">
-      <div className="flex flex-col">
+    <div className="flex flex-col w-full min-h-screen justify-evenly items-between">
+      {/* <div className="flex flex-col"> */}
         <Navbar />
       <Body />
-      </div>
+      {/* </div> */}
       
       <Footer />
     </div>

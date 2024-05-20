@@ -1,90 +1,64 @@
 import { useState } from "react";
+import { Link } from "react-router-dom";
+
 import img1 from "../../img/E-GYM1.png";
 import img2 from "../../img/E-GYM2.png";
 import img3 from "../../img/E-GYM3.png";
 import img4 from "../../img/E-GYM4.png";
-import { Link } from "react-router-dom";
 
 function EGYM() {
-  const [img, setImg] = useState(img1);
   const images = [img1, img2, img3, img4];
-  const handleClickRight = () => {
-    const currentIndex = images.indexOf(img);
-    const nextIndex = (currentIndex + 1) % images.length;
-    setImg(images[nextIndex]);
-  };
-  const handleClickLeft = () => {
-    const currentIndex = images.indexOf(img);
-    const prevIndex = (currentIndex - 1 + images.length) % images.length;
-    setImg(images[prevIndex]);
-  };
+  const [currentImage, setCurrentImage] = useState(0);
+
+  setTimeout(() => {
+    setCurrentImage((currentImage + 1) % images.length);
+  }, 6000);
 
   return (
-    <div className="flex items-center flex-col md:flex-row w-[96%] md:max-w-[90%] bg-base-100 p-2">
-      <span className="relative h-full max-w-[415px] hidden md:block">
-        <span className="absolute flex items-center justify-between w-full h-full p-2 font-bold text-secondary">
-          <button
-            className="w-10 h-10 p-2 text-center rounded-full bg-opacity-45 bg-base-100"
-            onClick={handleClickLeft}
-          >
-            ❮
-          </button>
-          <button
-            className="w-10 h-10 p-2 text-center rounded-full bg-opacity-45 bg-base-100"
-            onClick={handleClickRight}
-          >
-            ❯
-          </button>
-        </span>
-        <span className="absolute bottom-0 w-full text-center bg-base-100 bg-opacity-65">
-          Abril - Mayo 2024
-        </span>
-        <img className="h-full " src={img} alt="E-GYM" />
-      </span>
-      <div className="flex flex-col justify-between px-4 w-full min-w-[50%] md:max-w-[60%]">
-        <h2 className="text-2xl font-bold text-center text-primary md:text-start">
-          E-GYM
-        </h2>
-        <span className="relative h-full md:hidden">
-          <span className="absolute flex items-center justify-between w-full h-full p-2 font-bold text-secondary">
-            <button
-              className="w-8 h-8 p-2 text-sm rounded-full center bg-opacity-45 bg-base-100"
-              onClick={handleClickLeft}
-            >
-              ❮
-            </button>
-            <button
-              className="w-8 h-8 p-2 text-sm rounded-full center bg-opacity-45 bg-base-100"
-              onClick={handleClickRight}
-            >
-              ❯
-            </button>
+    <div className="transition-transform duration-300 cursor-pointer bg-base-100 hover:scale-105">
+      <h2 className="text-sm font-bold text-center sm:py-1 sm:text-2xl text-primary">
+        E-GYM
+      </h2>
+      <div className="relative m-2  md:m-0 max-w-[525px] aspect-auto ">
+        <div className="w-full h-full ">
+          <span className="relative w-full h-full ">
+            <span className="absolute bottom-0 w-full text-center bg-opacity-65 border-primary border-opacity-40 bg-base-100 ">
+              Abril - Mayo 2024
+            </span>
+            <img
+              src={images[currentImage]}
+              alt="EGYM"
+              className="object-cover object-center w-full h-full "
+            />
           </span>
-          <span className="absolute bottom-0 w-full text-xs text-center md:text-md bg-base-100 bg-opacity-65">
-            Abril - Mayo 2024
-          </span>
-          <img className="h-full " src={img} alt="E-GYM" />
-        </span>
-        <p className="mt-2 text-xs md:text-sm md:m-0">
-          Este proyecto incluye inicio de sesión Google junto con autenticación
-          y encriptado de contraseñas, Slides, Barra de búsqueda, Tienda de
-          productos, Carrito, Compra con Mercado Pago, Filtrado de productos,
-          Comentarios de productos.
-        </p>
-        <p className="text-xs md:text-sm">
-          Panel de administrador con vistas de: Productos, Usuarios, Cupones,
-          Ventas y Estadísticas.
-        </p>
+        </div>
+        <div
+          className="absolute inset-0 flex flex-col justify-center px-5 py-2 text-center opacity-0 sm:justify-around border-primary bg-opacity-85 bg-base-100 text-default hover:opacity-100 focus:opacity-100"
+          tabIndex="0"
+        >
+          <p className="hidden mt-2 text-xs sm:text-sm md:m-0 sm:block">
+            Este proyecto incluye inicio de sesión Google junto con
+            autenticación y encriptado de contraseñas, Slides, Barra de
+            búsqueda, Tienda de productos, Carrito, Compra con Mercado Pago,
+            Filtrado de productos, Comentarios de productos.
+          </p>
+          <p className="hidden text-sm sm:block">
+            Panel de administrador con vistas de: Productos, Usuarios, Cupones,
+            Ventas y Estadísticas.
+          </p>
 
-        <p className="px-2 py-1 my-1 text-xs md:text-md bg-primary text-base-100 md:text-sm">React, Tailwind, JavaScript, Google Auth, Cloudinary, JWT, MongoDB
-        </p>
-        <div className="flex justify-end w-full gap-2 ">
-          <Link
-            to="https://frontend-pf-three.vercel.app/"
-            className="p-2 px-4 text-sm font-semibold md:text-md text-primary bg-base-100 hover:bg-primary hover:text-base-100"
-          >
-            Ir
-          </Link>
+          <p className="text-xs sm:text-sm ">
+            Elaborado con: React, Tailwind, JavaScript, Google Auth, Cloudinary,
+            JWT, MongoDB
+          </p>
+          <div className="flex justify-end w-full ">
+            <Link
+              to="https://frontend-pf-three.vercel.app/"
+              className="px-3 py-2 my-1 text-sm font-semibold text-center sm:text-md text-base-100 bg-primary hover:text-primary hover:bg-base-100"
+            >
+              Web
+            </Link>
+          </div>
         </div>
       </div>
     </div>

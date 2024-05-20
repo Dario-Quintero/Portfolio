@@ -4,7 +4,7 @@ import img from "../../img/foto yo.jpeg";
 function Navbar() {
   return (
     <div className="flex justify-center w-full h-full py-2 mt-1 overflow-hidden font-semibold max-h-14">
-      <div className="flex justify-between items-center w-full mx-2 lg:mx-0 lg:w-[70%]">
+      <div className="flex items-center justify-between w-full mx-2 lg:mx-0 max-w-[1150px]">
         <div className="flex items-center gap-2">
           <div>
             <button
