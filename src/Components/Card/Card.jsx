@@ -6,7 +6,7 @@ function Card({ proyect }) {
 
   setTimeout(() => {
     setCurrentImage((currentImage + 1) % proyect?.images.length);
-  }, 2000);
+  }, 6000);
 
   return (
     <div className="transition-transform duration-300 cursor-pointer bg-base-100 hover:scale-105">
