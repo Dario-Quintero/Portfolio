@@ -6,7 +6,7 @@ function Card({ proyect }) {
 
   setTimeout(() => {
     setCurrentImage((currentImage + 1) % proyect?.images.length);
-  }, 6000);
+  }, 2000);
 
   return (
     <div className="transition-transform duration-300 cursor-pointer bg-base-100 hover:scale-105">
@@ -20,7 +20,6 @@ function Card({ proyect }) {
               {proyect?.date}
             </span>
             <img
-              key={proyect?.images[currentImage]}
               src={proyect?.images[currentImage]}
               alt={proyect?.name}
               className="object-cover object-center w-full h-full"

@@ -1,11 +1,11 @@
-import eGym1 from "./img/E-GYM1.png";
-import eGym2 from "./img/E-GYM2.png";
-import eGym3 from "./img/E-GYM3.png";
-import eGym4 from "./img/E-GYM4.png";
+import eGym1 from "./img/E-GYM1.jpg";
+import eGym2 from "./img/E-GYM2.jpg";
+import eGym3 from "./img/E-GYM3.jpg";
+import eGym4 from "./img/E-GYM4.jpg";
 
-import spaceDogs1 from "./img/SpaceDogs1.png";
-import spaceDogs2 from "./img/SpaceDogs2.png";
-import spaceDogs3 from "./img/SpaceDogs3.png";
+import spaceDogs1 from "./img/SpaceDogs1.jpg";
+import spaceDogs2 from "./img/SpaceDogs2.jpg";
+import spaceDogs3 from "./img/SpaceDogs3.jpg";
 
 const proyects = [
   {
@@ -13,7 +13,7 @@ const proyects = [
     date: "Mayo 2024",
     images: [eGym1, eGym2, eGym3, eGym4],
     description:
-      "Este proyecto incluye inicio de sesión Google Auth junto con autenticación y encriptado de contraseñas, Slides, Barra de búsqueda, Tienda de productos, Carrito, Compra con Mercado Pago, Filtrado de productos, Comentarios de productos. Panel de administrador con vistas de: Productos, Usuarios, Cupones, Ventas y Estadísticas.",
+      "Este proyecto incluye inicio de sesión con Google Auth junto con autenticación y encriptado de contraseñas, Slides, Barra de búsqueda, Tienda de productos, Carrito, Compra con Mercado Pago, Filtrado de productos, Comentarios de productos. Panel de administrador con vistas de: Productos, Usuarios, Cupones, Ventas y Estadísticas.",
     technologies:
       "React, Tailwind, JavaScript, Google Auth, Cloudinary, JWT, Node.js, Express, MongoDB, Mongoose",
     urls: { name: "Web", path: "https://frontend-pf-three.vercel.app/" },
