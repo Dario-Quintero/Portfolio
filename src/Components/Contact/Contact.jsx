@@ -46,7 +46,7 @@ function Contact() {
           LinkedIn
         </Link>
         <Link
-          to="https://drive.google.com/file/d/1I-10c6B5Hxql3pabtrNwbfXbITb0in44/view?usp=sharing"
+          to="https://docs.google.com/document/d/1vyrbNbG30hrAhuTJ5l3CEo3UQdoZbif0B4RS5mvNr9s/edit?usp=sharing"
           className="flex gap-2 items-center justify-center p-1 bg-base-100 text-primary hover:bg-primary hover:text-base-100 max-w-[100px] px-2 "
         >
           <IoIosPaper  />
