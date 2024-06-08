@@ -63,6 +63,7 @@ function Contact() {
         </button>
         <Link
           to="https://github.com/Dario-Quintero"
+          target="_blank"
           className="flex gap-2 items-center justify-center p-1 bg-base-100 text-primary hover:bg-primary hover:text-base-100 max-w-[100px] px-2 "
         >
           <FaGithub />
@@ -70,6 +71,7 @@ function Contact() {
         </Link>
         <Link
           to="https://www.linkedin.com/in/dario-quintero-9a7618239/"
+          target="_blank"
           className="flex gap-2 items-center justify-center p-1 bg-base-100 text-primary hover:bg-primary hover:text-base-100 max-w-[100px] px-2 "
         >
           <FaLinkedin />
@@ -77,6 +79,7 @@ function Contact() {
         </Link>
         <Link
           to="https://docs.google.com/document/d/1vyrbNbG30hrAhuTJ5l3CEo3UQdoZbif0B4RS5mvNr9s/edit?usp=sharing"
+          target="_blank"
           className="flex gap-2 items-center justify-center p-1 bg-base-100 text-primary hover:bg-primary hover:text-base-100 max-w-[100px] px-2 "
         >
           <IoIosPaper />

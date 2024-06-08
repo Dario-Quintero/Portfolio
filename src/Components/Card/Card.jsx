@@ -35,6 +35,7 @@ function Card({ proyect }) {
           </p>
           <div className="flex justify-end w-full">
             <Link
+              target="_blank"
               to={proyect?.urls.path}
               className="px-3 py-2 my-1 text-sm font-semibold text-center sm:text-md text-base-100 bg-primary hover:text-primary hover:bg-base-100"
             >
