@@ -16,7 +16,7 @@ function Card({ proyect }) {
       <div className="relative m-2 md:m-0 max-w-[525px] aspect-auto">
         <div className="w-full h-full">
           <span className="relative w-full h-full">
-            <span className="absolute bottom-0 w-full text-center bg-opacity-65 border-primary border-opacity-40 bg-base-100">
+            <span className="absolute bottom-0 w-full text-center bg-opacity-65 border-primary border-opacity-40  bg-base-100">
               {proyect?.date}
             </span>
             <img
