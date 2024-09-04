@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 
 function Card({ proyect }) {
   return (
-    <div className="relative cursor-pointer max-w-[320px] md:max-w-[450px] rounded-2xl overflow-hidden bg-black/15 dark:bg-white/25">
-      <h2 className="absolute top-0 z-10 text-sm font-semibold text-center sm:text-xl text-white/85 dark:text-black/75 bg-black/75 dark:bg-white/85 w-full">
+    <div className="relative cursor-pointer max-w-[320px] md:max-w-[450px] rounded-md overflow-hidden bg-black/15 dark:bg-white/25">
+      <h2 className="absolute top-0 z-30 text-sm font-semibold text-center sm:text-xl text-white/85 dark:text-black/75 bg-black/75 dark:bg-white/85 w-full">
         {proyect?.name}
       </h2>
       <div className="relative md:m-0 aspect-auto">
@@ -20,7 +20,7 @@ function Card({ proyect }) {
             />
           </span>
         </div>
-        <div className="absolute inset-0 z-20 flex flex-col  px-5 py-2 opacity-0 text-center justify-around text-transparent hover:opacity-100 focus:opacity-100 hover:bg-gray-900/80 focus:bg-gray-900/80 dark:focus:bg-gray-100/85 hover:text-white/75 dark:hover:bg-gray-100/85 dark:hover:text-black/85">
+        <div className="absolute inset-0 z-20 flex flex-col pt-8 px-5 py-2 opacity-0 text-center justify-around text-transparent transition-opacity hover:opacity-100 focus:opacity-100 hover:bg-gray-900/80 focus:bg-gray-900/80 dark:focus:bg-gray-100/85 hover:text-white/75 dark:hover:bg-gray-100/85 dark:hover:text-black/85 ">
           <p className="hidden mt-2 text-xs sm:text-sm md:m-0 sm:block">
             {proyect?.description}
           </p>
